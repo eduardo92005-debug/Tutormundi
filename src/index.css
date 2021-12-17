@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (min-width:481px) and (max-width:600px) {
+
+}
+
+@media screen and (min-width:769px) and (max-width:1199px) {
+
+}
+
+
+@media screen and (min-width:1200px) {
+
+    .main{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estrela img{
+        padding-left: 0.438rem;
+        cursor:pointer;
+    }
+    .estrela img:hover{
+        background-image: url('./components/main/estrela/img/estrela_cheia.svg');
+        background-repeat:no-repeat;
+        background-origin: border-box;
+        background-position-x: 100%;
+    }
+
+    .main--buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        height:30%;
+    }
+    #confirmar {
+        border-radius: 32px;
+        margin-left: 50px;
+        box-shadow: 10px 7px 20px grey;
+    }
+    #pular {
+        cursor:pointer;
+    }
+}

@@ -1,0 +1,10 @@
+.textao h1{
+    font-family: 'Londrina Solid', sans-serif, arial;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    word-wrap: break-word;  
+    letter-spacing: 2px; 
+    margin-bottom: 0.636rem;
+}
