@@ -6,32 +6,30 @@ export default class Estrela extends React.Component{
     constructor(){
         super();
         this.state = {
-            esta_preenchida: false
+            contador: 0
         }
     }
+
     avaliar = (evt) => {
-        if(this.state.esta_preenchida === false){
+        var confirmar_but = document.getElementById("main--buttons-confirmar");
+        if(this.state.contador === 0){
             this.setState({
-                esta_preenchida: true
+                contador: this.state.contador + 1
             });
             evt.currentTarget.position = 'static';
             evt.currentTarget.src = estrela_cheia;
+            confirmar_but.style.background ="#2CC6D0";
+            this.setState({contador: this.state.contador + 1});
 
         } else {
-            this.setState({
-                esta_preenchida: false
-            });
+            this.setState({contador: this.state.contador - 1});
             evt.currentTarget.position = 'static';
             evt.currentTarget.src = estrela_vazia;
-        }
-        }
+        } 
+    }
     render(){
         return(
             <div className="estrela">
-                    <img class="estrela--img" src={estrela_vazia} alt="Estrela" onClick={this.avaliar}/>
-                    <img class="estrela--img" src={estrela_vazia} alt="Estrela" onClick={this.avaliar}/>
-                    <img class="estrela--img" src={estrela_vazia} alt="Estrela" onClick={this.avaliar}/>
-                    <img class="estrela--img" src={estrela_vazia} alt="Estrela" onClick={this.avaliar}/>
                     <img class="estrela--img" src={estrela_vazia} alt="Estrela" onClick={this.avaliar}/>
             </div>
         );

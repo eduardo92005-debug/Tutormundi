@@ -6,13 +6,143 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    
+    .main{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estrela img{
+        padding-left: 0.438rem;
+        cursor:pointer;
+        position:static;
+    }
+    .estrela img:hover{
+        background-image: url('./components/main/estrela/img/estrela_cheia.svg');
+        background-repeat:no-repeat;
+        background-origin: border-box;
+        background-position-x: 100%;
+    }
+    .container-estrelas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main--buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin-left: 6.25rem;
+        height:30%;
+    }
+    #main--buttons-confirmar {
+        background: #C8C8C8;
+        border-radius: 32px;
+        margin-left: 1.875rem;
+        box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #main--buttons-pular {
+        cursor:pointer;
+        color:  #2CC6D0;
+    }
+
 }
 
 @media screen and (min-width:481px) and (max-width:600px) {
 
+    .main{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estrela img{
+        padding-left: 0.438rem;
+        cursor:pointer;
+        position:static;
+    }
+    .estrela img:hover{
+        background-image: url('./components/main/estrela/img/estrela_cheia.svg');
+        background-repeat:no-repeat;
+        background-origin: border-box;
+        background-position-x: 100%;
+    }
+    .container-estrelas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main--buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin-left: 6.25rem;
+        height:30%;
+    }
+    #main--buttons-confirmar {
+        background: #C8C8C8;
+        border-radius: 32px;
+        margin-left: 1.875rem;
+        box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
+    }
+    #main--buttons-pular {
+        cursor:pointer;
+        color:  #2CC6D0;
+    }
+    
+
 }
 
 @media screen and (min-width:769px) and (max-width:1199px) {
+
+    .main{
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estrela img{
+        padding-left: 0.438rem;
+        cursor:pointer;
+        position:static;
+    }
+    .estrela img:hover{
+        background-image: url('./components/main/estrela/img/estrela_cheia.svg');
+        background-repeat:no-repeat;
+        background-origin: border-box;
+        background-position-x: 100%;
+    }
+    .container-estrelas{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main--buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        height:30%;
+    }
+    #main--buttons-confirmar {
+        background: #C8C8C8;
+        border-radius: 32px;
+        margin-left: 40px;
+        box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
+    }
+    #main--buttons-pular {
+        cursor:pointer;
+        color:  #2CC6D0;
+    }
+    
 
 }
 
@@ -30,12 +160,17 @@
     .estrela img{
         padding-left: 0.438rem;
         cursor:pointer;
+        position:static;
     }
     .estrela img:hover{
         background-image: url('./components/main/estrela/img/estrela_cheia.svg');
         background-repeat:no-repeat;
         background-origin: border-box;
         background-position-x: 100%;
+    }
+    .container-estrelas{
+        display: flex;
+        flex-direction: row;
     }
 
     .main--buttons{
@@ -44,12 +179,14 @@
         align-items: flex-end;
         height:30%;
     }
-    #confirmar {
+    #main--buttons-confirmar {
+        background: #C8C8C8;
         border-radius: 32px;
-        margin-left: 50px;
-        box-shadow: 10px 7px 20px grey;
+        margin-left: 40px;
+        box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
     }
-    #pular {
+    #main--buttons-pular {
         cursor:pointer;
+        color:  #2CC6D0;
     }
 }

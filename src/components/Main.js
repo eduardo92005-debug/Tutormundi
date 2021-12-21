@@ -9,10 +9,16 @@ export default class Main extends React.Component{
             <div className="main">
                 <Livrao />
                 <Textao />
-                <Estrela />
+                <div class = "container-estrelas">
+                    <Estrela />
+                    <Estrela />
+                    <Estrela />
+                    <Estrela />
+                    <Estrela />
+                </div>
                 <div className="main--buttons">
-                    <button id="confirmar" type="button" class="btn btn-secondary">CONFIRMAR</button>
-                    <p id="pular" class="text-md-left font-weight-normal text-info">PULAR</p>
+                    <button id="main--buttons-confirmar" type="button" class="button is-primary is-rounded has-text-weight-semibold">CONFIRMAR</button>
+                    <p id="main--buttons-pular" class="has-text-weight-medium">PULAR</p>
                 </div>
             </div>
         );
